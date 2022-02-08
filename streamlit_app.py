@@ -10,3 +10,9 @@ chart_data = pd.DataFrame(
      columns=['a', 'b', 'c'])
 
 st.area_chart(chart_data)
+
+arr = np.random.normal(1, 1, size=100)
+fig, ax = plt.subplots()
+ax.hist(arr, bins=50)
+
+st.pyplot(fig)
